@@ -21,8 +21,6 @@ This version is optimized for fast review and memorization.
 
 **Memorize:** `C) Dropout Methods`
 
-**Quick reason:** Dropout Methods
-
 <details>
 <summary>Full explanation</summary>
 
@@ -63,8 +61,6 @@ https://medium.com/mlreview/a-simple-deep-learning-model-for-stock-price-predict
 
 **Memorize:** `D) Run a Google Cloud Dataflow batch pipeline to import the data into BigQuery, and push errors to another dead-letter table for analysis.`
 
-**Quick reason:** Run a Google Cloud Dataflow batch pipeline to import the data into BigQuery, and push errors to another dead-letter table for analysis.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -99,8 +95,6 @@ https://cloud.google.com/blog/products/gcp/handling-invalid-inputs-in-dataflow
 
 **Memorize:** `B) Retry the query with exponential backoff, up to a cap of 15 minutes.`
 
-**Quick reason:** Retry the query with exponential backoff, up to a cap of 15 minutes.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -133,8 +127,6 @@ https://cloud.google.com/sql/docs/mysql/manage-connections#backoff
 
 **Memorize:** `D) Use the ROW_NUMBER window function with PARTITION by unique ID along with WHERE row equals 1.`
 
-**Quick reason:** Use the ROW_NUMBER window function with PARTITION by unique ID along with WHERE row equals 1.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -162,8 +154,6 @@ https://www.youtube.com/watch?v=ysArdMImULo&list=PLQMsfKRZZviSLraRoqXulcMKFvIXQk
 - D) Use a global window with a time based trigger with a delay of 60 minutes.
 
 **Memorize:** `C) Use a session window with a gap time duration of 60 minutes.`
-
-**Quick reason:** There are 3 windowing concepts in dataflow and each can be used for below use case
 
 <details>
 <summary>Full explanation</summary>
@@ -207,8 +197,6 @@ https://cloud.google.com/dataflow/docs/concepts/streaming-pipelines
 
 **Memorize:** `D) Create a Cloud Dataproc cluster that uses the Google Cloud Storage connector.`
 
-**Quick reason:** Create a Cloud Dataproc cluster that uses the Google Cloud Storage connector.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -232,8 +220,6 @@ Dataproc is used to migrate Hadoop and Spark jobs on GCP. Dataproc with GCS conn
 - D) Migrate some of the cold data into Google Cloud Storage, and keep only the hot data in Persistent Disk.
 
 **Memorize:** `A) Put the data into Google Cloud Storage.`
-
-**Quick reason:** Put the data into Google Cloud Storage.
 
 <details>
 <summary>Full explanation</summary>
@@ -265,8 +251,6 @@ D is not correct because while this will reduce cost somewhat, it will not be as
 
 **Memorize:** `B) Send the data to Google Cloud Pub/Sub, stream Cloud Pub/Sub to Google Cloud Dataflow, and store the data in Google BigQuery.`
 
-**Quick reason:** Send the data to Google Cloud Pub/Sub, stream Cloud Pub/Sub to Google Cloud Dataflow, and store the data in Google BigQuery.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -290,8 +274,6 @@ You can use cloud data flow for both batch and streaming pipelines. Bigquery for
 - D) Create an anonymized sample of the data for the consultant to work with in a different project.Most Voted
 
 **Memorize:** `B) Grant the consultant the Cloud Dataflow Developer role on the project.`
-
-**Quick reason:** Grant the consultant the Cloud Dataflow Developer role on the project.
 
 <details>
 <summary>Full explanation</summary>
@@ -320,8 +302,6 @@ https://cloud.google.com/dataflow/docs/concepts/access-control#example_role_assi
 - D) Store the data in a file in a regional Google Cloud Storage bucket. Use Cloud Dataflow to query BigQuery and combine the data programmatically with the data stored in Google Cloud Storage.
 
 **Memorize:** `B) Store and update the data in a regional Google Cloud Storage bucket and create a federated data source in BigQuery`
-
-**Quick reason:** Store and update the data in a regional Google Cloud Storage bucket and create a federated data source in BigQuery
 
 <details>
 <summary>Full explanation</summary>
@@ -354,8 +334,6 @@ https://cloud.google.com/bigquery/external-data-sources
 - D) Cloud Datastore
 
 **Memorize:** `B) Cloud SQL`
-
-**Quick reason:** Cloud SQL
 
 <details>
 <summary>Full explanation</summary>
@@ -393,8 +371,6 @@ D: okay datastore supports transactions, but it is weaker than RDB, and also, in
 - E) Create an S3-compatible storage endpoint in your network, and use Google Cloud Storage Transfer Service to transfer on-premises data to the designated storage bucket.
 
 **Memorize:** `C) Redesign the data ingestion process to use gsutil tool to send the CSV files to a storage bucket in parallel.`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -447,8 +423,6 @@ https://cloud.google.com/storage-transfer/docs/overview#gsutil
 
 **Memorize:** `E) Cassandra`
 
-**Quick reason:** HBase, D. MongoDB, E. Cassandra
-
 <details>
 <summary>Full explanation</summary>
 
@@ -483,8 +457,6 @@ F. HDFS with Hive - Hive allows users to read, write, and manage petabytes of da
 
 **Memorize:** `D) Most rows in the [myproject:mydataset.mytable] table have the same value in the country column, causing data skew`
 
-**Quick reason:** Most rows in the [myproject:mydataset.mytable] table have the same value in the country column, causing data skew
-
 <details>
 <summary>Full explanation</summary>
 
@@ -515,8 +487,6 @@ https://cloud.google.com/bigquery/docs/best-practices-performance-patterns
 
 **Memorize:** `D) Have each application server write the bid events to Google Cloud Pub/Sub as they occur. Use a pull subscription to pull the bid events using Google Cloud Dataflow. Give the bid for each item to the user in the bid event that is processed first.`
 
-**Quick reason:** Have each application server write the bid events to Google Cloud Pub/Sub as they occur. Use a pull subscription to pull the bid events using Google Cloud Dataflow. Gi...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -545,8 +515,6 @@ https://stackoverflow.com/questions/62997414/push-vs-pull-for-gcp-dataflow
 - E) Create a Google Cloud Identity and Access Management (Cloud IAM) role for the ODBC connection and shared "events"
 
 **Memorize:** `D) Create a service account for the ODBC connection to use for authentication`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -581,8 +549,6 @@ https://cloud.google.com/bigquery/docs/reference/standard-sql/migrating-from-leg
 
 **Memorize:** `B) Use pre-emptible virtual machines (VMs) for the cluster`
 
-**Quick reason:** Use pre-emptible virtual machines (VMs) for the cluster
-
 <details>
 <summary>Full explanation</summary>
 
@@ -611,8 +577,6 @@ https://cloud.google.com/dataproc/docs/concepts/compute/preemptible-vms
 
 **Memorize:** `A) Use Storage Transfer Service to transfer the offsite backup files to a Cloud Storage Multi-Regional storage bucket as a final destination.`
 
-**Quick reason:** Use Storage Transfer Service to transfer the offsite backup files to a Cloud Storage Multi-Regional storage bucket as a final destination.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -638,8 +602,6 @@ Even since BigQuery Data Transfer Service initially supports Google application 
 - D) Compress text files to gzip using the Grid Computing Tools. Use Cloud Storage, and then import into Cloud Bigtable for query.
 
 **Memorize:** `B) Transform text files to compressed Avro using Cloud Dataflow. Use Cloud Storage and BigQuery permanent linked tables for query.`
-
-**Quick reason:** Transform text files to compressed Avro using Cloud Dataflow. Use Cloud Storage and BigQuery permanent linked tables for query.
 
 <details>
 <summary>Full explanation</summary>
@@ -668,8 +630,6 @@ A : Importing data into BigQuery may take more time compared to creating externa
 - D) Use Cloud Storage for storage. Link as temporary tables in BigQuery for query.
 
 **Memorize:** `C) Use Cloud Storage for storage. Link as permanent tables in BigQuery for query.`
-
-**Quick reason:** Use Cloud Storage for storage. Link as permanent tables in BigQuery for query.
 
 <details>
 <summary>Full explanation</summary>
@@ -711,8 +671,6 @@ into a data warehouse.
 
 **Memorize:** `C) Use Cloud Spanner for storage. Add secondary indexes to support query patterns.`
 
-**Quick reason:** Use Cloud Spanner for storage. Add secondary indexes to support query patterns.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -740,8 +698,6 @@ https://cloud.google.com/spanner/docs/secondary-indexes
 - D) Google Cloud Datastore
 
 **Memorize:** `A) Cloud Bigtable`
-
-**Quick reason:** Cloud Bigtable
 
 <details>
 <summary>Full explanation</summary>
@@ -781,8 +737,6 @@ https://cloud.google.com/blog/products/databases/getting-started-with-time-serie
 
 **Memorize:** `A) PigLatin using Pig`
 
-**Quick reason:** PigLatin using Pig
-
 <details>
 <summary>Full explanation</summary>
 
@@ -806,8 +760,6 @@ Pig is scripting language which can be used for checkpointing and splitting pipe
 - D) Cloud SQL
 
 **Memorize:** `D) Cloud SQL`
-
-**Quick reason:** Cloud SQL
 
 <details>
 <summary>Full explanation</summary>
@@ -837,8 +789,6 @@ https://cloud.google.com/sql/docs/features
 
 **Memorize:** `C) Streaming job, PubSubIO, BigQueryIO, side-inputs`
 
-**Quick reason:** Streaming job, PubSubIO, BigQueryIO, side-inputs
-
 <details>
 <summary>Full explanation</summary>
 
@@ -867,8 +817,6 @@ https://cloud.google.com/architecture/e-commerce/patterns/slow-updating-side-inp
 
 **Memorize:** `C) Store the raw social media posts in Cloud Storage, and write the data extracted from the API into BigQuery.`
 
-**Quick reason:** Store the raw social media posts in Cloud Storage, and write the data extracted from the API into BigQuery.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -892,8 +840,6 @@ Social media posts can images/videos which cannot be stored in bigquery
 - D) Workflow Templates on Cloud Dataproc
 
 **Memorize:** `B) Cloud Composer`
-
-**Quick reason:** Cloud Composer
 
 <details>
 <summary>Full explanation</summary>
@@ -923,8 +869,6 @@ https://stackoverflow.com/questions/59841146/cloud-composer-vs-cloud-scheduler
 
 **Memorize:** `D) Build a Cloud Function that reads the topics and makes a call to the Cloud Data Loss Prevention API. Use the tagging and confidence levels to either pass or quarantine the data in a bucket for review.`
 
-**Quick reason:** Build a Cloud Function that reads the topics and makes a call to the Cloud Data Loss Prevention API. Use the tagging and confidence levels to either pass or quarantine...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -952,8 +896,6 @@ https://cloud.google.com/dlp
 - D) Cloud AutoML Natural Language
 
 **Memorize:** `C) Dialogflow Enterprise Edition`
-
-**Quick reason:** Dialogflow Enterprise Edition
 
 <details>
 <summary>Full explanation</summary>
@@ -983,8 +925,6 @@ https://cloud.google.com/blog/products/gcp/introducing-dialogflow-enterprise-edi
 
 **Memorize:** `D) Use Cloud Pub/Sub for message ingestion and Cloud Dataflow for streaming analysis.`
 
-**Quick reason:** Use Cloud Pub/Sub for message ingestion and Cloud Dataflow for streaming analysis.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1008,8 +948,6 @@ Dataflow has autoscaling feature and pubsub is best solution
 - D) Create a table for each department. Assign the department leads the role of Editor, and assign the data analysts the role of Viewer on the project the table is in.
 
 **Memorize:** `B) Create a dataset for each department. Assign the department leads the role of WRITER, and assign the data analysts the role of READER on their dataset.`
-
-**Quick reason:** Create a dataset for each department. Assign the department leads the role of WRITER, and assign the data analysts the role of READER on their dataset.
 
 <details>
 <summary>Full explanation</summary>
@@ -1039,8 +977,6 @@ https://cloud.google.com/bigquery/docs/access-control-primitive-roles#dataset-pr
 - E) Write an application that uses Cloud Datastore client libraries to read all the entities. Format the exported data into a JSON file. Apply compression before storing the data in Cloud Source Repositories.
 
 **Memorize:** `B) Use managed export, and then import to Cloud Datastore in a separate project under a unique namespace reserved for that export.`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -1074,8 +1010,6 @@ https://cloud.google.com/datastore/docs/export-import-entities
 
 **Memorize:** `D) Store the data in a multi-regional Cloud Storage bucket. Access the data directly using Cloud Dataproc, BigQuery, and Compute Engine.`
 
-**Quick reason:** Store the data in a multi-regional Cloud Storage bucket. Access the data directly using Cloud Dataproc, BigQuery, and Compute Engine.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1100,8 +1034,6 @@ Multi-region increases high availability and pdf can be stored in gcs
 
 **Memorize:** `B) Implement Cloud Spanner with the leader in North America and read-only replicas in Asia and Europe.`
 
-**Quick reason:** Implement Cloud Spanner with the leader in North America and read-only replicas in Asia and Europe.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1125,8 +1057,6 @@ Cloud Spanner has three types of replicas: read-write replicas, read-only replic
 - D) Cloud Pub/Sub, Cloud Dataproc, Cloud SQL
 
 **Memorize:** `B) Cloud Pub/Sub, Cloud Storage, BigQuery`
-
-**Quick reason:** Cloud Pub/Sub, Cloud Storage, BigQuery
 
 <details>
 <summary>Full explanation</summary>
@@ -1164,8 +1094,6 @@ https://cloud.google.com/bigquery/docs/write-api#:~:text=You%20can%20use%20the%2
 
 **Memorize:** `B) Use a Cloud Pub/Sub topic to publish jobs, and use subscriptions to execute them`
 
-**Quick reason:** Use a Cloud Pub/Sub topic to publish jobs, and use subscriptions to execute them
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1189,8 +1117,6 @@ Pub/sub will be used to streaming data between application
 - D) Use trickle or ionice along with gsutil cp to limit the amount of bandwidth gsutil utilizes to less than 20 Mb/sec so it does not interfere with the production traffic
 
 **Memorize:** `A) Use Transfer Appliance to copy the data to Cloud Storage`
-
-**Quick reason:** Use Transfer Appliance to copy the data to Cloud Storage
 
 <details>
 <summary>Full explanation</summary>
@@ -1216,8 +1142,6 @@ Huge amount of data with log network bandwidth, Transfer applicate is best for m
 
 **Memorize:** `A) Use Cloud Dataprep to build and maintain the transformation recipes, and execute them on a scheduled basis`
 
-**Quick reason:** Use Cloud Dataprep to build and maintain the transformation recipes, and execute them on a scheduled basis
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1241,8 +1165,6 @@ Dataprep is used by non developers
 - D) Use TensorFlow to create a model that is trained on your corpus of images. Create a Python notebook in Cloud Datalab that uses this model so you can analyze for damaged packages.
 
 **Memorize:** `B) Train an AutoML model on your corpus of images, and build an API around that model to integrate with the package tracking applications.`
-
-**Quick reason:** For this scenario, where you need to automate the detection of damaged packages in real time while they are in transit, the most suitable solution among the provided o...
 
 <details>
 <summary>Full explanation</summary>
@@ -1284,8 +1206,6 @@ D. Use TensorFlow in Cloud Datalab: While this is a viable option for creating a
 
 **Memorize:** `A) Consume the stream of data in Cloud Dataflow using Kafka IO. Set a sliding time window of 1 hour every 5 minutes. Compute the average when the window closes, and send an alert if the average is less than 4000 messages.`
 
-**Quick reason:** Consume the stream of data in Cloud Dataflow using Kafka IO. Set a sliding time window of 1 hour every 5 minutes. Compute the average when the window closes, and send...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1312,8 +1232,6 @@ Sliding Window will help to calculate average.
 
 **Memorize:** `A) Deploy a Cloud Dataproc cluster. Use a standard persistent disk and 50% preemptible workers. Store data in Cloud Storage, and change references in scripts from hdfs:// to gs://`
 
-**Quick reason:** Deploy a Cloud Dataproc cluster. Use a standard persistent disk and 50% preemptible workers. Store data in Cloud Storage, and change references in scripts from hdfs://...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1337,8 +1255,6 @@ Cloud Dataproc for Managed Cloud native application and HDD for cost-effective s
 - D) Cloud Datastore
 
 **Memorize:** `A) Cloud SQL`
-
-**Quick reason:** Cloud SQL
 
 <details>
 <summary>Full explanation</summary>
@@ -1367,8 +1283,6 @@ If you enable this setting, Cloud SQL checks your available storage every 30 sec
 - D) Reduces the amount of data processed, increases query speed
 
 **Memorize:** `B) Increases query speed, makes queries simpler`
-
-**Quick reason:** Increases query speed, makes queries simpler
 
 <details>
 <summary>Full explanation</summary>
@@ -1404,8 +1318,6 @@ https://cloud.google.com/solutions/bigquery-data-warehouse
 
 **Memorize:** `B) Number of nodes in each hidden layer`
 
-**Quick reason:** Answers are;
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1436,8 +1348,6 @@ https://cloud.google.com/ai-platform/training/docs/hyperparameter-tuning-overvie
 - D) Bucketization of a continuous feature
 
 **Memorize:** `D) Bucketization of a continuous feature`
-
-**Quick reason:** Answer are;
 
 <details>
 <summary>Full explanation</summary>
@@ -1474,8 +1384,6 @@ https://cloud.google.com/solutions/machine-learning/ml-on-structured-data-model-
 
 **Memorize:** `A) Both batch and streaming`
 
-**Quick reason:** Both batch and streaming
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1504,8 +1412,6 @@ https://cloud.google.com/dataflow/model/bigquery-io
 
 **Memorize:** `B) Drain`
 
-**Quick reason:** Drain
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1533,8 +1439,6 @@ https://cloud.google.com/dataflow/pipelines/stopping-a-pipeline
 - D) To give a user access to only one table in a project, you must configure access through your application.
 
 **Memorize:** `B) To give a user access to only one table in a project, grant the user the Bigtable Editor role for that table.`
-
-**Quick reason:** To give a user access to only one table in a project, grant the user the Bigtable Editor role for that table.
 
 <details>
 <summary>Full explanation</summary>
@@ -1567,8 +1471,6 @@ https://cloud.google.com/bigtable/docs/access-control
 
 **Memorize:** `C) Keep your row key reasonably short`
 
-**Quick reason:** A general guide is to, keep your row keys reasonably short. Long row keys take up additional memory and storage and increase the time it takes to get responses from th...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1595,8 +1497,6 @@ https://cloud.google.com/bigtable/docs/schema-design#row-keys
 - D) once
 
 **Memorize:** `A) before`
-
-**Quick reason:** before
 
 <details>
 <summary>Full explanation</summary>
@@ -1628,8 +1528,6 @@ https://cloud.google.com/bigtable/docs/overview
 
 **Memorize:** `C) SSH tunnel`
 
-**Quick reason:** SSH tunnel
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1657,8 +1555,6 @@ https://cloud.google.com/dataproc/docs/concepts/cluster-web-interfaces#connectin
 - D) worker node
 
 **Memorize:** `C) master node`
-
-**Quick reason:** master node
 
 <details>
 <summary>Full explanation</summary>
@@ -1689,8 +1585,6 @@ https://cloud.google.com/dataproc/docs/concepts/cluster-web-interfaces#interface
 
 **Memorize:** `E) second-by-second`
 
-**Quick reason:** second-by-second
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1718,8 +1612,6 @@ https://cloud.google.com/dataproc/docs/concepts/overview
 - D) deleting applications from unused nodes periodically
 
 **Memorize:** `A) increasing or decreasing the number of worker nodes`
-
-**Quick reason:** increasing or decreasing the number of worker nodes
 
 <details>
 <summary>Full explanation</summary>
@@ -1752,8 +1644,6 @@ https://cloud.google.com/dataproc/docs/concepts/scaling-clusters
 
 **Memorize:** `B) value`
 
-**Quick reason:** value
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1781,8 +1671,6 @@ https://cloud.google.com/dataproc/docs/concepts/cluster-properties#formatting
 - D) List the jobs.
 
 **Memorize:** `D) List the jobs.`
-
-**Quick reason:** List the jobs.
 
 <details>
 <summary>Full explanation</summary>
@@ -1812,8 +1700,6 @@ https://cloud.google.com/dataproc/docs/concepts/iam#iam_roles_and_cloud_dataproc
 
 **Memorize:** `B) Spark`
 
-**Quick reason:** Spark
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1842,8 +1728,6 @@ https://cloud.google.com/dataproc/docs/
 
 **Memorize:** `C) SOCKS`
 
-**Quick reason:** SOCKS
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1871,8 +1755,6 @@ https://cloud.google.com/dataproc/docs/concepts/cluster-web-interfaces#interface
 - D) A Dataproc cluster cannot have only preemptible workers.
 
 **Memorize:** `D) A Dataproc cluster cannot have only preemptible workers.`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -1909,8 +1791,6 @@ https://cloud.google.com/dataproc/docs/concepts/preemptible-vms
 
 **Memorize:** `A) zone`
 
-**Quick reason:** zone
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1944,8 +1824,6 @@ https://cloud.google.com/dataproc/docs/tutorials/python-library-example#create_a
 
 **Memorize:** `A) Dataproc Worker`
 
-**Quick reason:** Dataproc Worker
-
 <details>
 <summary>Full explanation</summary>
 
@@ -1975,8 +1853,6 @@ https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/service-acc
 - D) Read and write to Google Cloud Storage; write to Google Cloud Logging
 
 **Memorize:** `D) Read and write to Google Cloud Storage; write to Google Cloud Logging`
-
-**Quick reason:** Read and write to Google Cloud Storage; write to Google Cloud Logging
 
 <details>
 <summary>Full explanation</summary>
@@ -2012,8 +1888,6 @@ https://www.googleapis.com/auth/logging.write
 
 **Memorize:** `D) Spark`
 
-**Quick reason:** Answers are;
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2044,8 +1918,6 @@ https://cloud.google.com/dataproc/docs/resources/faq#what_type_of_jobs_can_i_run
 
 **Memorize:** `B) Single, Global Window`
 
-**Quick reason:** Single, Global Window
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2073,8 +1945,6 @@ https://cloud.google.com/dataflow/model/pcollection
 - D) Pipelines can share data between instances
 
 **Memorize:** `D) Pipelines can share data between instances`
-
-**Quick reason:** Pipelines can share data between instances
 
 <details>
 <summary>Full explanation</summary>
@@ -2104,8 +1974,6 @@ https://cloud.google.com/dataflow/model/pipelines
 
 **Memorize:** `A) dataflow.worker`
 
-**Quick reason:** dataflow.worker
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2133,8 +2001,6 @@ https://cloud.google.com/dataflow/access-control
 - D) Sink API
 
 **Memorize:** `B) Transform`
-
-**Quick reason:** Transform
 
 <details>
 <summary>Full explanation</summary>
@@ -2166,8 +2032,6 @@ https://cloud.google.com/dataflow/docs/concepts/beam-programming-model#concepts
 
 **Memorize:** `A) Dataflow pipelines are tied to Dataflow, and cannot be run on any other runner`
 
-**Quick reason:** Dataflow pipelines are tied to Dataflow, and cannot be run on any other runner
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2195,8 +2059,6 @@ https://cloud.google.com/dataflow/
 - D) Cloud Datastore
 
 **Memorize:** `D) Cloud Datastore`
-
-**Quick reason:** Cloud Datastore
 
 <details>
 <summary>Full explanation</summary>
@@ -2231,8 +2093,6 @@ https://cloud.google.com/datastore/docs/concepts/overview
 - D) Store transaction data in Cloud SQL. Use a federated query BigQuery for analysis.
 
 **Memorize:** `B) Store transaction in Cloud Spanner. Use locking read-write transactions.`
-
-**Quick reason:** Store transaction in Cloud Spanner. Use locking read-write transactions.
 
 <details>
 <summary>Full explanation</summary>
@@ -2273,8 +2133,6 @@ BigQuery. For security reasons, you decide to redact your customers' Government 
 - D) Before loading the data into BigQuery, use Cloud Data Loss Prevention (DLP) to replace input values with a cryptographic format-preserving encryption token.
 
 **Memorize:** `D) Before loading the data into BigQuery, use Cloud Data Loss Prevention (DLP) to replace input values with a cryptographic format-preserving encryption token.`
-
-**Quick reason:** Before loading the data into BigQuery, use Cloud Data Loss Prevention (DLP) to replace input values with a cryptographic format-preserving encryption token.
 
 <details>
 <summary>Full explanation</summary>
@@ -2326,8 +2184,6 @@ https://cloud.google.com/dlp/docs/transformations-reference
 
 **Memorize:** `C) Copy all dependencies to a Cloud Storage bucket within your VPC security perimeter`
 
-**Quick reason:** Copy all dependencies to a Cloud Storage bucket within your VPC security perimeter
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2357,8 +2213,6 @@ https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/init-action
 - D) Use Apache Beam Python SDK to build the transformation pipelines, and write the data into BigQuery.
 
 **Memorize:** `C) Ingest your data into BigQuery from Cloud Storage, convert your PySpark commands into BigQuery SQL queries to transform the data, and then write the transformations to a new table.`
-
-**Quick reason:** Ingest your data into BigQuery from Cloud Storage, convert your PySpark commands into BigQuery SQL queries to transform the data, and then write the transformations to...
 
 <details>
 <summary>Full explanation</summary>
@@ -2398,8 +2252,6 @@ https://cloud.google.com/dataproc-serverless/docs/overview
 
 **Memorize:** `D) Create a pseudonym by replacing PII data with a cryptographic format-preserving token.`
 
-**Quick reason:** Create a pseudonym by replacing PII data with a cryptographic format-preserving token.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2429,8 +2281,6 @@ https://cloud.google.com/dlp/docs/pseudonymization#supported-methods
 - D) Batch the job into ten-second increments.
 
 **Memorize:** `D) Batch the job into ten-second increments.`
-
-**Quick reason:** Batch the job into ten-second increments.
 
 <details>
 <summary>Full explanation</summary>
@@ -2476,8 +2326,6 @@ Additionally, it's important to consider other strategies in conjunction with ba
 
 **Memorize:** `C) gsutil for the migration; Pub/Sub and Dataflow for the real-time updates`
 
-**Quick reason:** gsutil for the migration; Pub/Sub and Dataflow for the real-time updates
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2520,8 +2368,6 @@ https://cloud.google.com/architecture/migration-to-google-cloud-transferring-you
 
 **Memorize:** `D) Build a Cloud Function that reads the topics and makes a call to the Cloud Data Loss Prevention (Cloud DLP) API. Use the tagging and confidence levels to either pass or quarantine the data in a bucket for review.`
 
-**Quick reason:** Build a Cloud Function that reads the topics and makes a call to the Cloud Data Loss Prevention (Cloud DLP) API. Use the tagging and confidence levels to either pass o...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2548,8 +2394,6 @@ DLP is required
 - E) Load the ORC files into BigQuery. Leverage BigQuery connector for Hadoop to mount the BigQuery tables as external Hive tables. Replicate external Hive tables to the native ones.
 
 **Memorize:** `D) Leverage Cloud Storage connector for Hadoop to mount the ORC files as external Hive tables. Replicate external Hive tables to the native ones.`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -2594,8 +2438,6 @@ https://cloud.google.com/blog/products/data-analytics/new-release-of-cloud-stora
 
 **Memorize:** `C) Have a staging table that moves the staged data over to the production table and deletes the contents of the staging table every three hours.`
 
-**Quick reason:** Have a staging table that moves the staged data over to the production table and deletes the contents of the staging table every three hours.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2628,8 +2470,6 @@ https://cloud.google.com/blog/products/data-analytics/moving-a-publishing-workfl
 
 **Memorize:** `A) Do daily exports of Cloud Logging data to BigQuery. Create views filtering by project, log type, resource, and user.`
 
-**Quick reason:** Do daily exports of Cloud Logging data to BigQuery. Create views filtering by project, log type, resource, and user.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2661,8 +2501,6 @@ Development Team to be able to read data from both Cloud Storage and BigQuery, b
 - D) Create a VPC Service Controls perimeter containing both projects and Cloud Storage as a restricted API. Add the Development Team users to the perimeter's Access Level.
 
 **Memorize:** `D) Create a VPC Service Controls perimeter containing both projects and Cloud Storage as a restricted API. Add the Development Team users to the perimeter's Access Level.`
-
-**Quick reason:** Create a VPC Service Controls perimeter containing both projects and Cloud Storage as a restricted API. Add the Development Team users to the perimeter's Access Level.
 
 <details>
 <summary>Full explanation</summary>
@@ -2698,8 +2536,6 @@ https://scalesec.com/blog/vpc-service-controls-in-plain-english/
 
 **Memorize:** `A) Use Cloud Spanner to configure a single region instance initially, and then configure multi-region Cloud Spanner instances after securing funding.`
 
-**Quick reason:** Use Cloud Spanner to configure a single region instance initially, and then configure multi-region Cloud Spanner instances after securing funding.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2733,8 +2569,6 @@ https://cloud.google.com/spanner/docs/instance-configurations#tradeoffs_regional
 - D) Use an Apache Beam custom connector to write a Dataflow pipeline that streams the data into BigQuery in Avro format.
 
 **Memorize:** `D) Use an Apache Beam custom connector to write a Dataflow pipeline that streams the data into BigQuery in Avro format.`
-
-**Quick reason:** Use an Apache Beam custom connector to write a Dataflow pipeline that streams the data into BigQuery in Avro format.
 
 <details>
 <summary>Full explanation</summary>
@@ -2774,8 +2608,6 @@ So leveraging Dataflow + Avro + Beam provides the most efficient way to stream p
 
 **Memorize:** `A) Use a Pub/Sub push subscription to trigger a Cloud Function to pass the data to the Python API.`
 
-**Quick reason:** Use a Pub/Sub push subscription to trigger a Cloud Function to pass the data to the Python API.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2808,8 +2640,6 @@ https://cloud.google.com/functions/docs/calling/pubsub#deployment
 
 **Memorize:** `C) Install Storage Transfer Service for on-premises data in your data center, and then configure a weekly transfer job.`
 
-**Quick reason:** Install Storage Transfer Service for on-premises data in your data center, and then configure a weekly transfer job.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2839,8 +2669,6 @@ https://cloud.google.com/architecture/migration-to-google-cloud-transferring-you
 - D) Use BigQuery BI Engine with authorized views.
 
 **Memorize:** `A) Use BigQuery BI Engine with materialized views.`
-
-**Quick reason:** Use BigQuery BI Engine with materialized views.
 
 <details>
 <summary>Full explanation</summary>
@@ -2873,8 +2701,6 @@ https://cloud.google.com/bigquery/docs/materialized-views-intro
 - D) Use Cloud Storage to comply with major data protection standards. Use multiple service accounts attached to IAM groups to grant the appropriate access to each group.
 
 **Memorize:** `D) Use Cloud Storage to comply with major data protection standards. Use multiple service accounts attached to IAM groups to grant the appropriate access to each group.`
-
-**Quick reason:** Use Cloud Storage to comply with major data protection standards. Use multiple service accounts attached to IAM groups to grant the appropriate access to each group.
 
 <details>
 <summary>Full explanation</summary>
@@ -2912,8 +2738,6 @@ Based on these considerations, option D is the most appropriate choice. It ensur
 
 **Memorize:** `A) Disable caching by editing the report settings.`
 
-**Quick reason:** Disable caching by editing the report settings.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -2939,8 +2763,6 @@ https://support.google.com/datastudio/answer/7020039?hl=en
 - D) Use the Google Cloud Billing API to see what account the warehouse is being billed to.
 
 **Memorize:** `A) Use Google Stackdriver Audit Logs to review data access.`
-
-**Quick reason:** Use Google Stackdriver Audit Logs to review data access.
 
 <details>
 <summary>Full explanation</summary>
@@ -2971,8 +2793,6 @@ https://cloud.google.com/bigquery/docs/slots
 
 **Memorize:** `E) Construct a query to return every row of the table CLICK_STREAM, while using the built-in function to cast strings from the column DT into TIMESTAMP values. Run the query into a destination table NEW_CLICK_STREAM, in which the column TS is the TIMESTAMP type. Reference the table NEW_CLICK_STREAM instead of the table CLICK_STREAM from now on. In the future, new data is loaded into the table NEW_CLICK_STREAM.`
 
-**Quick reason:** Creating a new table from existing table in BigQuery with new transformed column will be simple and will not involve and migration effort. Also future query performanc...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3000,8 +2820,6 @@ https://cloud.google.com/bigquery/docs/manually-changing-schemas#changing_a_colu
 - D) Create a new pipeline that has a new Cloud Pub/Sub subscription and cancel the old pipeline.
 
 **Memorize:** `A) Update the current pipeline and use the drain flag.`
-
-**Quick reason:** Update the current pipeline and use the drain flag.
 
 <details>
 <summary>Full explanation</summary>
@@ -3037,8 +2855,6 @@ Dataflow to create a real-time dashboard for the CFO. During testing, you notice
 
 **Memorize:** `B) Run a fixed dataset through the Cloud Dataflow pipeline and analyze the output.`
 
-**Quick reason:** Run a fixed dataset through the Cloud Dataflow pipeline and analyze the output.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3066,8 +2882,6 @@ https://cloud.google.com/pubsub/docs/monitoring
 - D) Use BigQuery to export the data for the table to a CSV file. Create a Google Cloud Dataproc job to process the CSV file and output a new CSV file containing the proper values for FirstName, LastName and FullName. Run a BigQuery load job to load the new CSV file into BigQuery.
 
 **Memorize:** `C) Create a Google Cloud Dataflow job that queries BigQuery for the entire Users table, concatenates the FirstName value and LastName value for each user, and loads the proper values for FirstName, LastName, and FullName into a new table in BigQuery.`
-
-**Quick reason:** Create a Google Cloud Dataflow job that queries BigQuery for the entire Users table, concatenates the FirstName value and LastName value for each user, and loads the p...
 
 <details>
 <summary>Full explanation</summary>
@@ -3103,8 +2917,6 @@ https://cloud.google.com/bigquery/docs/manually-changing-schemas?hl=en#changing_
 
 **Memorize:** `A) Use the TABLE_DATE_RANGE function`
 
-**Quick reason:** Use the TABLE_DATE_RANGE function
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3134,8 +2946,6 @@ https://cloud.google.com/blog/products/gcp/using-bigquery-and-firebase-analytics
 - D) They have not applied a non-global windowing function, which causes the job to fail when the pipeline is created
 
 **Memorize:** `D) They have not applied a non-global windowing function, which causes the job to fail when the pipeline is created`
-
-**Quick reason:** They have not applied a non-global windowing function, which causes the job to fail when the pipeline is created
 
 <details>
 <summary>Full explanation</summary>
@@ -3171,8 +2981,6 @@ https://beam.apache.org/documentation/programming-guide/#windowing
 
 **Memorize:** `B) Introduce a new MapReduce job to apply sensor calibration to raw data, and ensure all other MapReduce jobs are chained after this.`
 
-**Quick reason:** Introduce a new MapReduce job to apply sensor calibration to raw data, and ensure all other MapReduce jobs are chained after this.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3197,8 +3005,6 @@ It is a cleaner approach with single job to handle the calibration before the da
 
 **Memorize:** `B) Cloud SQL`
 
-**Quick reason:** Cloud SQL
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3222,8 +3028,6 @@ Cloud SQL supports transactions as well as analysis through a BI tool. Firestore
 - D) Create separate views to cover each month, and query from these views
 
 **Memorize:** `B) Convert the sharded tables into a single partitioned table`
-
-**Quick reason:** Convert the sharded tables into a single partitioned table
 
 <details>
 <summary>Full explanation</summary>
@@ -3253,8 +3057,6 @@ https://cloud.google.com/bigquery/docs/partitioned-tables#dt_partition_shard
 
 **Memorize:** `C) Create a service account and grant dataset access to that account. Use the service account's private key to access the dataset`
 
-**Quick reason:** Create a service account and grant dataset access to that account. Use the service account's private key to access the dataset
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3278,8 +3080,6 @@ Service Account are best option when granting access from tools/appllications
 - D) Use Cloud Dataflow to run your transformations. Monitor the total execution time for a sampling of jobs. Configure the job to use non-default Compute Engine machine types when needed.
 
 **Memorize:** `C) Use Cloud Dataflow to run your transformations. Monitor the job system lag with Stackdriver. Use the default autoscaling setting for worker instances.`
-
-**Quick reason:** Use Cloud Dataflow to run your transformations. Monitor the job system lag with Stackdriver. Use the default autoscaling setting for worker instances.
 
 <details>
 <summary>Full explanation</summary>
@@ -3305,8 +3105,6 @@ Dataflow provides a cost-effective solution to perform transformations on the st
 
 **Memorize:** `D) In a bucket on Cloud Storage that is accessible only by an AppEngine service that collects user information and logs the access before providing a link to the bucket.`
 
-**Quick reason:** In a bucket on Cloud Storage that is accessible only by an AppEngine service that collects user information and logs the access before providing a link to the bucket.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3330,8 +3128,6 @@ Bigquery is not the best option here to store the auditable record of access to 
 - D) Create stratified random samples using the OVER() function and compare equivalent samples from each table.Most Voted
 
 **Memorize:** `C) Use a Dataproc cluster and the BigQuery Hadoop connector to read the data from each table and calculate a hash from non-timestamp columns of the table after sorting. Compare the hashes of each table.`
-
-**Quick reason:** Use a Dataproc cluster and the BigQuery Hadoop connector to read the data from each table and calculate a hash from non-timestamp columns of the table after sorting. C...
 
 <details>
 <summary>Full explanation</summary>
@@ -3369,8 +3165,6 @@ gsutil is a command-line tool that enables you to work with Cloud Storage bucket
 
 **Memorize:** `C) Switch to flat-rate pricing and establish a hierarchical priority model for your projects.`
 
-**Quick reason:** Switch to flat-rate pricing and establish a hierarchical priority model for your projects.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3399,8 +3193,6 @@ https://cloud.google.com/blog/products/gcp/busting-12-myths-about-bigquery
 
 **Memorize:** `A) Deploy a Kafka cluster on GCE VM Instances. Configure your on-prem cluster to mirror your topics to the cluster running in GCE. Use a Dataproc cluster or Dataflow job to read from Kafka and write to GCS.`
 
-**Quick reason:** Deploy a Kafka cluster on GCE VM Instances. Configure your on-prem cluster to mirror your topics to the cluster running in GCE. Use a Dataproc cluster or Dataflow job...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3428,8 +3220,6 @@ https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=27846330
 - D) Add a try... catch block to your DoFn that transforms the data, use a sideOutput to create a PCollection that can be stored to PubSub later.Most Voted
 
 **Memorize:** `C) Add a try... catch block to your DoFn that transforms the data, write erroneous rows to PubSub directly from the DoFn.`
-
-**Quick reason:** Add a try... catch block to your DoFn that transforms the data, write erroneous rows to PubSub directly from the DoFn.
 
 <details>
 <summary>Full explanation</summary>
@@ -3463,8 +3253,6 @@ https://medium.com/google-cloud/dead-letter-queues-simple-implementation-strateg
 
 **Memorize:** `C) Add a second cluster to an existing instance with a single-cluster routing, use live-traffic app profile for your regular workload and batch-analytics profile for the analytics workload.`
 
-**Quick reason:** Add a second cluster to an existing instance with a single-cluster routing, use live-traffic app profile for your regular workload and batch-analytics profile for the...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3493,8 +3281,6 @@ https://cloud.google.com/bigtable/docs/replication-overview#use-cases
 
 **Memorize:** `B) Use Cloud Dataprep with recipes to detect errors and perform transformations.`
 
-**Quick reason:** Use Cloud Dataprep with recipes to detect errors and perform transformations.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3518,8 +3304,6 @@ The keyword here is no programming skills required.
 - D) Install an FTP server on a Compute Engine VM to receive the files and move them to Cloud Storage.
 
 **Memorize:** `A) Execute gsutil rsync from the on-premises servers.`
-
-**Quick reason:** Execute gsutil rsync from the on-premises servers.
 
 <details>
 <summary>Full explanation</summary>
@@ -3549,8 +3333,6 @@ https://cloud.google.com/solutions/migration-to-google-cloud-transferring-your-l
 
 **Memorize:** `B) Export the records from the database as an Avro file. Copy the file onto a Transfer Appliance and send it to Google, and then load the Avro file into BigQuery using the BigQuery web UI in the GCP Console.`
 
-**Quick reason:** Export the records from the database as an Avro file. Copy the file onto a Transfer Appliance and send it to Google, and then load the Avro file into BigQuery using th...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3578,8 +3360,6 @@ Without knowing the bandwidth, it is not possible to determine whether the uploa
 - D) Export the Cloud Dataprep job as a Cloud Dataflow template, and incorporate it into a Cloud Composer job.
 
 **Memorize:** `D) Export the Cloud Dataprep job as a Cloud Dataflow template, and incorporate it into a Cloud Composer job.`
-
-**Quick reason:** Export the Cloud Dataprep job as a Cloud Dataflow template, and incorporate it into a Cloud Composer job.
 
 <details>
 <summary>Full explanation</summary>
@@ -3609,8 +3389,6 @@ https://cloud.google.com/blog/products/data-analytics/how-to-orchestrate-cloud-d
 
 **Memorize:** `A) Create a Direct Acyclic Graph in Cloud Composer to schedule and monitor the jobs.`
 
-**Quick reason:** Create a Direct Acyclic Graph in Cloud Composer to schedule and monitor the jobs.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3635,8 +3413,6 @@ Cloud composer is used to schedule the interdependent jobs
 - E) The subscriber code does not acknowledge the messages that it pulls.
 
 **Memorize:** `E) The subscriber code does not acknowledge the messages that it pulls.`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -3671,8 +3447,6 @@ D: Cloud Functions automatically scales so they should be able to keep up.
 
 **Memorize:** `B) Cloud Composer`
 
-**Quick reason:** Cloud Composer
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3703,8 +3477,6 @@ https://cloud.google.com/composer#section-2
 
 **Memorize:** `A) Create an authorized view on the BigQuery table to control data access, and provide third-party companies with access to that view.`
 
-**Quick reason:** Create an authorized view on the BigQuery table to control data access, and provide third-party companies with access to that view.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3728,8 +3500,6 @@ By creating an authorized view one assures that the data is current and avoids t
 - D) Re-create the table using data partitioning on the package delivery date.
 
 **Memorize:** `B) Implement clustering in BigQuery on the package-tracking ID column.`
-
-**Quick reason:** Implement clustering in BigQuery on the package-tracking ID column.
 
 <details>
 <summary>Full explanation</summary>
@@ -3765,8 +3535,6 @@ Stackdriver to ensure that it is processing data. Which Stackdriver alerts shoul
 
 **Memorize:** `B) An alert based on an increase of subscription/num_undelivered_messages for the source and a rate of change decrease of instance/storage/ used_bytes for the destination`
 
-**Quick reason:** An alert based on an increase of subscription/num_undelivered_messages for the source and a rate of change decrease of instance/storage/ used_bytes for the destination
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3793,8 +3561,6 @@ Because large parts of globe have poor internet connectivity, messages sometimes
 
 **Memorize:** `C) An IoT gateway connected to Cloud Pub/Sub, with Cloud Dataflow to read and process the messages from Cloud Pub/Sub.`
 
-**Quick reason:** An IoT gateway connected to Cloud Pub/Sub, with Cloud Dataflow to read and process the messages from Cloud Pub/Sub.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3819,8 +3585,6 @@ Alterative to Kafka in google cloud native service is Pub/Sub and Dataflow punch
 
 **Memorize:** `C) Store the full dataset in BigQuery, and store a compressed copy of the data in a Cloud Storage bucket.`
 
-**Quick reason:** Store the full dataset in BigQuery, and store a compressed copy of the data in a Cloud Storage bucket.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3844,8 +3608,6 @@ BigQuery for analytics processing and Cloud Storage for exposing the data as fil
 - D) Organize your data in separate tables for each month, and use snapshot decorators to restore the table to a time prior to the corruption.
 
 **Memorize:** `B) Organize your data in separate tables for each month, and export, compress, and store the data in Cloud Storage.`
-
-**Quick reason:** Organize your data in separate tables for each month, and export, compress, and store the data in Cloud Storage.
 
 <details>
 <summary>Full explanation</summary>
@@ -3875,8 +3637,6 @@ https://cloud.google.com/architecture/dr-scenarios-for-data#managed-database-ser
 
 **Memorize:** `D) Create an application that publishes events to Cloud Pub/Sub, and create a Cloud Dataflow pipeline that transforms the JSON event payloads to Avro, writing the data to Cloud Storage and BigQuery.`
 
-**Quick reason:** Create an application that publishes events to Cloud Pub/Sub, and create a Cloud Dataflow pipeline that transforms the JSON event payloads to Avro, writing the data to...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3901,8 +3661,6 @@ Because we have to be able to query over historical 2 years data only BigQuery a
 
 **Memorize:** `C) Create a Directed Acyclic Graph in Cloud Composer`
 
-**Quick reason:** Create a Directed Acyclic Graph in Cloud Composer
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3926,8 +3684,6 @@ Wokflow template is a template with no scheduling capabilities. For scheduling C
 - D) Export the data access logs via an aggregated export sink to a Cloud Storage bucket in a newly created project for audit logs. Restrict access to the project that contains the exported logs.
 
 **Memorize:** `D) Export the data access logs via an aggregated export sink to a Cloud Storage bucket in a newly created project for audit logs. Restrict access to the project that contains the exported logs.`
-
-**Quick reason:** Export the data access logs via an aggregated export sink to a Cloud Storage bucket in a newly created project for audit logs. Restrict access to the project that cont...
 
 <details>
 <summary>Full explanation</summary>
@@ -3957,8 +3713,6 @@ https://cloud.google.com/logging/docs/export/aggregated_sinks
 
 **Memorize:** `D) Stop the Cloud Dataflow pipeline with the Drain option. Create a new Cloud Dataflow job with the updated code`
 
-**Quick reason:** Stop the Cloud Dataflow pipeline with the Drain option. Create a new Cloud Dataflow job with the updated code
-
 <details>
 <summary>Full explanation</summary>
 
@@ -3986,8 +3740,6 @@ https://cloud.google.com/dataflow/docs/guides/updating-a-pipeline
 - D) Cloud Composer
 
 **Memorize:** `D) Cloud Composer`
-
-**Quick reason:** Cloud Composer
 
 <details>
 <summary>Full explanation</summary>
@@ -4018,8 +3770,6 @@ https://cloud.google.com/scheduler
 - D) Allocate additional network interface card (NIC), and configure link aggregation in the operating system to use the combined throughput when working with Cloud Storage
 
 **Memorize:** `B) Allocate sufficient persistent disk space to the Hadoop cluster, and store the intermediate data of that particular Hadoop job on native HDFS`
-
-**Quick reason:** Local HDFS storage is a good option if:
 
 <details>
 <summary>Full explanation</summary>
@@ -4057,8 +3807,6 @@ You have I/O workloads that are especially sensitive to latency. For example, yo
 
 **Memorize:** `C) Copy all dependencies to a Cloud Storage bucket within your VPC security perimeter`
 
-**Quick reason:** Copy all dependencies to a Cloud Storage bucket within your VPC security perimeter
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4089,8 +3837,6 @@ TB in size. Which database should you choose?
 
 **Memorize:** `A) Cloud SQL`
 
-**Quick reason:** Cloud SQL
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4119,8 +3865,6 @@ https://cloud.google.com/sql/docs/quotas#:~:text=Cloud%20SQL%20storage%20limits&
 
 **Memorize:** `A) Export the information to Cloud Stackdriver, and set up an Alerting policy`
 
-**Quick reason:** Export the information to Cloud Stackdriver, and set up an Alerting policy
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4144,8 +3888,6 @@ Monitoring does not only provide you with access to Dataflow-related metrics, bu
 - D) Add ", UNNEST(city)" before the WHERE clause.
 
 **Memorize:** `B) Change "city" to "person.city".`
-
-**Quick reason:** Change "city" to "person.city".
 
 <details>
 <summary>Full explanation</summary>
@@ -4193,8 +3935,6 @@ https://cloud.google.com/bigquery/docs/nested-repeated
 
 **Memorize:** `C) Data can only be exported in JSON or Avro format.`
 
-**Quick reason:** Data can only be exported in JSON or Avro format.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4235,8 +3975,6 @@ https://cloud.google.com/bigquery/docs/exporting-data#export_limitations
 
 **Memorize:** `A) Storage, queries, and streaming inserts`
 
-**Quick reason:** Storage, queries, and streaming inserts
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4260,8 +3998,6 @@ All are charged, no charges for exporting and loading data in same region
 - D) There is no charge for a query that retrieves its results from cache.
 
 **Memorize:** `D) There is no charge for a query that retrieves its results from cache.`
-
-**Quick reason:** There is no charge for a query that retrieves its results from cache.
 
 <details>
 <summary>Full explanation</summary>
@@ -4301,8 +4037,6 @@ https://cloud.google.com/bigquery/docs/cached-results#pricing_and_quotas
 
 **Memorize:** `D) Google Cloud SQL`
 
-**Quick reason:** Google Cloud SQL
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4328,8 +4062,6 @@ On console we can see that we can use file, bigtable, drive and GS.
 - D) Use DATE BETWEEN in the WHERE clause
 
 **Memorize:** `C) Use the __PARTITIONTIME pseudo-column in the WHERE clause`
-
-**Quick reason:** Use the __PARTITIONTIME pseudo-column in the WHERE clause
 
 <details>
 <summary>Full explanation</summary>
@@ -4359,8 +4091,6 @@ https://cloud.google.com/bigquery/docs/partitioned-tables#ingestion_time
 
 **Memorize:** `C) SELECT`
 
-**Quick reason:** SELECT
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4384,8 +4114,6 @@ Select can be used to only select few columns which will reduce query time and c
 - D) It's not possible to give access to only the first three columns of a table.
 
 **Memorize:** `C) Authorized view`
-
-**Quick reason:** Authorized view
 
 <details>
 <summary>Full explanation</summary>
@@ -4416,8 +4144,6 @@ https://cloud.google.com/bigquery/docs/authorized-views
 
 **Memorize:** `B) 1) Join tables into one table; 2) Use nested repeated fields`
 
-**Quick reason:** 1) Join tables into one table; 2) Use nested repeated fields
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4445,8 +4171,6 @@ https://medium.com/@guillaumelbr13/how-to-denormalize-tables-in-bigquery-cd1677c
 
 **Memorize:** `D) Use ORDER BY to put a table's rows into chronological order and then change the table's type to "Partitioned".`
 
-**Quick reason:** Use ORDER BY to put a table's rows into chronological order and then change the table's type to "Partitioned".
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4470,8 +4194,6 @@ Once table is created, you cannot change it partitioned
 - D) Input values
 
 **Memorize:** `B) Biases`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -4500,8 +4222,6 @@ The two are adjust to create a perfect model
 
 **Memorize:** `B) categorical_column_with_hash_bucket`
 
-**Quick reason:** categorical_column_with_hash_bucket
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4529,8 +4249,6 @@ https://www.tensorflow.org/tutorials/structured_data/feature_columns
 - D) A processing time trigger
 
 **Memorize:** `D) A processing time trigger`
-
-**Quick reason:** A processing time trigger
 
 <details>
 <summary>Full explanation</summary>
@@ -4562,8 +4280,6 @@ https://beam.apache.org/documentation/programming-guide/#triggers
 
 **Memorize:** `A) ParDo`
 
-**Quick reason:** ParDo
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4592,8 +4308,6 @@ https://cloud.google.com/dataflow/model/par-do
 
 **Memorize:** `B) Both Batch and Streaming Data Pipelines`
 
-**Quick reason:** Both Batch and Streaming Data Pipelines
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4621,8 +4335,6 @@ https://cloud.google.com/dataflow/
 - D) BigQuery Data Transfer Service
 
 **Memorize:** `A) Cloud Dataflow connector`
-
-**Quick reason:** Cloud Dataflow connector
 
 <details>
 <summary>Full explanation</summary>
@@ -4654,8 +4366,6 @@ https://cloud.google.com/bigtable/docs/hbase-dataflow-java
 
 **Memorize:** `D) Apache Beam`
 
-**Quick reason:** Apache Beam
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4683,8 +4393,6 @@ https://cloud.google.com/dataflow/docs/
 - D) LocalPipelineRunner
 
 **Memorize:** `B) DirectPipelineRunner`
-
-**Quick reason:** DirectPipelineRunner
 
 <details>
 <summary>Full explanation</summary>
@@ -4718,8 +4426,6 @@ https://beam.apache.org/documentation/runners/direct/
 
 **Memorize:** `A) Trigger based on element size in bytes`
 
-**Quick reason:** Trigger based on element size in bytes
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4748,8 +4454,6 @@ https://cloud.google.com/dataflow/model/triggers
 
 **Memorize:** `D) Triggers`
 
-**Quick reason:** Triggers
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4777,8 +4481,6 @@ https://cloud.google.com/dataflow/java-sdk/JavaDoc/com/google/cloud/dataflow/sdk
 - D) Pipelines cannot be run locally
 
 **Memorize:** `A) Your gcloud does not have access to the BigQuery resources`
-
-**Quick reason:** Your gcloud does not have access to the BigQuery resources
 
 <details>
 <summary>Full explanation</summary>
@@ -4810,8 +4512,6 @@ https://cloud.google.com/dataflow/java-sdk/JavaDoc/com/google/cloud/dataflow/sdk
 
 **Memorize:** `A) Manually configure the index in your index config as follows:`
 
-**Quick reason:** Manually configure the index in your index config
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4841,8 +4541,6 @@ https://cloud.google.com/datastore/docs/concepts/indexes#index_limits
 - D) Enable dead-lettering on the Pub/Sub topic to capture messages that aren't successfully acknowledged. If an error occurs after deployment, re-deliver any messages captured by the dead-letter queue.
 
 **Memorize:** `B) Create a Pub/Sub snapshot before deploying new subscriber code. Use a Seek operation to re-deliver messages that became available after the snapshot was created.`
-
-**Quick reason:** Create a Pub/Sub snapshot before deploying new subscriber code. Use a Seek operation to re-deliver messages that became available after the snapshot was created.
 
 <details>
 <summary>Full explanation</summary>
@@ -4880,8 +4578,6 @@ BigQuery ML to create a machine learning model. You plan to use the model for pr
 
 **Memorize:** `A) When creating your model, use BigQuery's TRANSFORM clause to define preprocessing steps. At prediction time, use BigQuery's ML.EVALUATE clause without specifying any transformations on the raw input data.`
 
-**Quick reason:** When creating your model, use BigQuery's TRANSFORM clause to define preprocessing steps. At prediction time, use BigQuery's ML.EVALUATE clause without specifying any t...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4911,8 +4607,6 @@ https://cloud.google.com/bigquery-ml/docs/bigqueryml-transform
 - D) Use a sliding window with a duration of 30 seconds and a period of 5 seconds. Emit results by setting the following trigger: AfterWatermark.pastEndOfWindow ()
 
 **Memorize:** `D) Use a sliding window with a duration of 30 seconds and a period of 5 seconds. Emit results by setting the following trigger: AfterWatermark.pastEndOfWindow ()`
-
-**Quick reason:** Use a sliding window with a duration of 30 seconds and a period of 5 seconds. Emit results by setting the following trigger: AfterWatermark.pastEndOfWindow ()
 
 <details>
 <summary>Full explanation</summary>
@@ -4950,8 +4644,6 @@ https://cloud.google.com/dataflow/docs/concepts/streaming-pipelines#hopping-wind
 
 **Memorize:** `D) Create a streaming Dataflow job that reads continually from the Pub/Sub topic and performs the necessary aggregations using tumbling windows.`
 
-**Quick reason:** Create a streaming Dataflow job that reads continually from the Pub/Sub topic and performs the necessary aggregations using tumbling windows.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -4988,8 +4680,6 @@ https://cloud.google.com/dataflow/docs/concepts/streaming-pipelines#tumbling-win
 
 **Memorize:** `C) Create a table that includes information about the books and authors, but nest the author fields inside the author column.`
 
-**Quick reason:** Create a table that includes information about the books and authors, but nest the author fields inside the author column.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5019,8 +4709,6 @@ https://cloud.google.com/bigquery/docs/best-practices-performance-nested
 - D) For each index, have a separate table and use a reverse timestamp as the row key design.
 
 **Memorize:** `B) Create one unique table for all of the indices, and then use a reverse timestamp as the row key design.`
-
-**Quick reason:** Create one unique table for all of the indices, and then use a reverse timestamp as the row key design.
 
 <details>
 <summary>Full explanation</summary>
@@ -5052,8 +4740,6 @@ https://cloud.google.com/bigtable/docs/schema-design#time-based
 - E) Insert each new CDC record and corresponding operation type in real time to the reporting table, and use a materialized view to expose only the newest version of each unique record.
 
 **Memorize:** `D) Periodically use a DML MERGE to perform several DML INSERT, UPDATE, and DELETE operations at the same time on the reporting table.`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -5091,8 +4777,6 @@ INT64s in the same column, and inconsistent formatting of values such as phone n
 - D) Create a table with the desired schema, load the CSV files into the table, and perform the transformations in place using SQL.
 
 **Memorize:** `A) Use Data Fusion to transform the data before loading it into BigQuery.`
-
-**Quick reason:** Use Data Fusion to transform the data before loading it into BigQuery.
 
 <details>
 <summary>Full explanation</summary>
@@ -5153,8 +4837,6 @@ https://cloud.google.com/data-fusion/docs/concepts/overview#:~:text=The%20Cloud%
 
 **Memorize:** `B) Continuously retrain the model on a combination of existing data and the new data.`
 
-**Quick reason:** Continuously retrain the model on a combination of existing data and the new data.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5185,8 +4867,6 @@ https://docs.aws.amazon.com/machine-learning/latest/dg/retraining-models-on-new-
 
 **Memorize:** `A) Linear regression`
 
-**Quick reason:** Linear regression
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5215,8 +4895,6 @@ https://towardsdatascience.com/predicting-house-prices-with-linear-regression-ma
 
 **Memorize:** `D) Estimate the average latency for data availability after streaming inserts, and always run queries after waiting twice as long.`
 
-**Quick reason:** Estimate the average latency for data availability after streaming inserts, and always run queries after waiting twice as long.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5243,8 +4921,6 @@ The data is first comes to buffer and then written to Storage. If we are running
 
 **Memorize:** `D) Supervised learning to predict the location of a transaction.`
 
-**Quick reason:** B-C-D
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5270,8 +4946,6 @@ Say the model predict a location, guessing US or Sweden are both wrong when the 
 - D) Deploy Google Cloud Datalab to a virtual machine (VM) on Google Compute Engine.
 
 **Memorize:** `D) Deploy Google Cloud Datalab to a virtual machine (VM) on Google Compute Engine.`
-
-**Quick reason:** Deploy Google Cloud Datalab to a virtual machine (VM) on Google Compute Engine.
 
 <details>
 <summary>Full explanation</summary>
@@ -5304,8 +4978,6 @@ https://cloud.google.com/datalab/docs/quickstarts
 - D) Remove the features that have null values for more than 50% of the training records.
 
 **Memorize:** `B) Combine highly co-dependent features into one representative feature.`
-
-**Quick reason:** Combine highly co-dependent features into one representative feature.
 
 <details>
 <summary>Full explanation</summary>
@@ -5341,8 +5013,6 @@ The data scientists have written the following code to read the data for a new k
 
 **Memorize:** `B) Use .fromQuery operation to read specific fields from the table.`
 
-**Quick reason:** Use .fromQuery operation to read specific fields from the table.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5372,8 +5042,6 @@ https://cloud.google.com/bigquery/docs/best-practices-costs#avoid_select_
 - D) Use a row key of the form >#<sensorid>#<timestamp>.
 
 **Memorize:** `D) Use a row key of the form >#<sensorid>#<timestamp>.`
-
-**Quick reason:** Use a row key of the form >#
 
 <details>
 <summary>Full explanation</summary>
@@ -5406,8 +5074,6 @@ https://cloud.google.com/bigtable/docs/schema-design
 - F) F. Decrease the regularization parameters
 
 **Memorize:** `E) Increase the regularization parameters`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -5442,8 +5108,6 @@ https://cloud.google.com/bigquery-ml/docs/preventing-overfitting
 
 **Memorize:** `A) X^2+Y^2`
 
-**Quick reason:** X^2+Y^2
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5470,8 +5134,6 @@ https://medium.com/@sachinkun21/using-a-linear-model-to-deal-with-nonlinear-data
 
 **Memorize:** `B) Use Cloud Dataprep to find null values in sample source data. Convert all nulls to 0 using a Cloud Dataprep job.`
 
-**Quick reason:** Use Cloud Dataprep to find null values in sample source data. Convert all nulls to 0 using a Cloud Dataprep job.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5495,8 +5157,6 @@ Key phrases are "casual method", "need to replace null with real values", "logis
 - D) Build an application that calls the Cloud Video Intelligence API to generate labels. Store data in Cloud SQL, and join and filter the predicted labels to match the user's viewing history to generate preferences.
 
 **Memorize:** `C) Build an application that calls the Cloud Video Intelligence API to generate labels. Store data in Cloud Bigtable, and filter the predicted labels to match the user's viewing history to generate preferences.`
-
-**Quick reason:** Build an application that calls the Cloud Video Intelligence API to generate labels. Store data in Cloud Bigtable, and filter the predicted labels to match the user's...
 
 <details>
 <summary>Full explanation</summary>
@@ -5530,8 +5190,6 @@ https://cloud.google.com/video-intelligence/docs/feature-label-detection
 
 **Memorize:** `A) Call the Cloud Natural Language API from your application. Process the generated Entity Analysis as labels.`
 
-**Quick reason:** Call the Cloud Natural Language API from your application. Process the generated Entity Analysis as labels.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5557,8 +5215,6 @@ Sentiment analysis -> Understand the overall opinion, feeling, or attitude senti
 - D) Create a feature cross of latitude and longitude, bucketize it at the minute level and use L2 regularization during optimization.
 
 **Memorize:** `C) Create a feature cross of latitude and longitude, bucketize at the minute level and use L1 regularization during optimization.`
-
-**Quick reason:** Create a feature cross of latitude and longitude, bucketize at the minute level and use L1 regularization during optimization.
 
 <details>
 <summary>Full explanation</summary>
@@ -5590,8 +5246,6 @@ https://developers.google.com/machine-learning/crash-course/regularization-for-s
 
 **Memorize:** `D) Match loan applicants with their social profiles to enable feature engineering.`
 
-**Quick reason:** Match loan applicants with their social profiles to enable feature engineering.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5615,8 +5269,6 @@ Don't think its B because you don't have the defaulted rate in hand only default
 - D) Add a GroupByKey transform in Cloud Dataflow to group all of the valid data together and discard the rest.
 
 **Memorize:** `B) Add a ParDo transform in Cloud Dataflow to discard corrupt elements.`
-
-**Quick reason:** Add a ParDo transform in Cloud Dataflow to discard corrupt elements.
 
 <details>
 <summary>Full explanation</summary>
@@ -5646,8 +5298,6 @@ https://beam.apache.org/documentation/programming-guide/
 - E) Copy a daily snapshot of transaction data to Cloud Storage and store it as an Avro file. Use BigQuery's support for external data sources to query.
 
 **Memorize:** `D) Develop a data pipeline where status updates are appended to BigQuery instead of updated.`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -5682,8 +5332,6 @@ https://cloud.google.com/solutions/bigquery-data-warehouse#handling_change
 
 **Memorize:** `B) Use Cloud Vision AutoML, but reduce your dataset twice.`
 
-**Quick reason:** Use Cloud Vision AutoML, but reduce your dataset twice.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5707,8 +5355,6 @@ POC is a small-scale experiments
 - D) Stay on CPUs, and increase the size of the cluster you're training your model on.
 
 **Memorize:** `C) Use Cloud GPUs after implementing GPU kernel support for your customs ops.`
-
-**Quick reason:** Use Cloud GPUs after implementing GPU kernel support for your customs ops.
 
 <details>
 <summary>Full explanation</summary>
@@ -5742,8 +5388,6 @@ https://www.tensorflow.org/guide/create_op#gpu_kernels
 
 **Memorize:** `C) Try out regularization techniques (e.g., dropout of batch normalization) to avoid overfitting.`
 
-**Quick reason:** Try out regularization techniques (e.g., dropout of batch normalization) to avoid overfitting.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5767,8 +5411,6 @@ Try out regularization techniques (e.g., dropout of batch normalization) to avoi
 - D) Create a Cloud Dataflow pipeline using BigQueryIO to read predictions for all users from the query. Write the results to Cloud Bigtable using BigtableIO. Grant the Bigtable Reader role to the application service account so that the application can read predictions for individual users from Cloud Bigtable.
 
 **Memorize:** `D) Create a Cloud Dataflow pipeline using BigQueryIO to read predictions for all users from the query. Write the results to Cloud Bigtable using BigtableIO. Grant the Bigtable Reader role to the application service account so that the application can read predictions for individual users from Cloud Bigtable.`
-
-**Quick reason:** Create a Cloud Dataflow pipeline using BigQueryIO to read predictions for all users from the query. Write the results to Cloud Bigtable using BigtableIO. Grant the Big...
 
 <details>
 <summary>Full explanation</summary>
@@ -5794,8 +5436,6 @@ The key reason for pick D is the 100ms requirement. Bigtable provides lowest lat
 
 **Memorize:** `C) Use Cloud Dataproc for training existing Spark ML models, but start reading data directly from BigQuery`
 
-**Quick reason:** Use Cloud Dataproc for training existing Spark ML models, but start reading data directly from BigQuery
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5820,8 +5460,6 @@ Use Cloud Dataproc for training existing Spark ML models, but start reading data
 
 **Memorize:** `A) BigQuery`
 
-**Quick reason:** BigQuery
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5845,8 +5483,6 @@ Geospatial and ML functionality is with bigquery
 - D) Scale predictions you get out of the model (tune a scaling factor as a hyperparameter) in order to get the highest AUC
 
 **Memorize:** `A) Perform hyperparameter tuning`
-
-**Quick reason:** Perform hyperparameter tuning
 
 <details>
 <summary>Full explanation</summary>
@@ -5875,8 +5511,6 @@ https://developers.google.com/machine-learning/crash-course/classification/roc-a
 - D) Create a wide table in Cloud Bigtable with a row key that combines the computer identifier with the sample time at each minute, and combine the values for each second as column data.
 
 **Memorize:** `C) Create a narrow table in Cloud Bigtable with a row key that combines the Computer Engine computer identifier with the sample time at each second`
-
-**Quick reason:** Create a narrow table in Cloud Bigtable with a row key that combines the Computer Engine computer identifier with the sample time at each second
 
 <details>
 <summary>Full explanation</summary>
@@ -5908,8 +5542,6 @@ https://cloud.google.com/bigtable/docs/schema-design-time-series#patterns_for_ro
 
 **Memorize:** `B) To make sure your model is generalized for more than just the training data`
 
-**Quick reason:** To make sure your model is generalized for more than just the training data
-
 <details>
 <summary>Full explanation</summary>
 
@@ -5933,8 +5565,6 @@ Splitting data ensures that the model created works with test data (similar feat
 - D) Parameter servers
 
 **Memorize:** `C) Workers and parameter servers`
-
-**Quick reason:** Workers and parameter servers
 
 <details>
 <summary>Full explanation</summary>
@@ -5963,8 +5593,6 @@ https://cloud.google.com/ai-platform/training/docs/machine-types#scale_tiers
 - D) TensorFlow and TorchMost Voted
 
 **Memorize:** `C) TensorFlow`
-
-**Quick reason:** TensorFlow
 
 <details>
 <summary>Full explanation</summary>
@@ -5996,8 +5624,6 @@ https://cloud.google.com/ai-platform/training/docs/overview
 
 **Memorize:** `B) A good use for the wide and deep model is a recommender system.`
 
-**Quick reason:** Answers are;
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6028,8 +5654,6 @@ https://ai.googleblog.com/2016/06/wide-deep-learning-better-together-with.html
 
 **Memorize:** `A) gcloud ml-engine local train`
 
-**Quick reason:** gcloud ml-engine local train
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6058,8 +5682,6 @@ https://cloud.google.com/sdk/gcloud/reference/ml-engine/local/train
 
 **Memorize:** `B) Regressor`
 
-**Quick reason:** Regressor
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6084,8 +5706,6 @@ Regression is the supervised learning task to model and predict numerical value
 
 **Memorize:** `C) Use deep learning by creating a neural network with multiple hidden layers to automatically detect features of faces.`
 
-**Quick reason:** Use deep learning by creating a neural network with multiple hidden layers to automatically detect features of faces.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6109,8 +5729,6 @@ Multiple layer to detect face
 - D) It is optimized to minimize the latency of serving predictions.
 
 **Memorize:** `D) It is optimized to minimize the latency of serving predictions.`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -6143,8 +5761,6 @@ https://cloud.google.com/ai-platform/prediction/docs/online-vs-batch-prediction
 
 **Memorize:** `D) [1, 0, 0, 0, 0, 0, 0]`
 
-**Quick reason:** Answers are;
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6171,8 +5787,6 @@ Sparse vector contains only 0 and 1, whereas only one 1
 - D) Create an embedding column
 
 **Memorize:** `D) Create an embedding column`
-
-**Quick reason:** Create an embedding column
 
 <details>
 <summary>Full explanation</summary>
@@ -6201,8 +5815,6 @@ https://www.studyblue.com/notes/note/n/data-engineer-practice-exam/deck/21261127
 - D) Cloud Datastore
 
 **Memorize:** `C) BigQuery`
-
-**Quick reason:** BigQuery
 
 <details>
 <summary>Full explanation</summary>
@@ -6234,8 +5846,6 @@ https://en.wikipedia.org/wiki/Apache_Hive
 
 **Memorize:** `D) You expect future mutations to have similar features to the mutated samples in the database.`
 
-**Quick reason:** A and D
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6261,8 +5871,6 @@ D: You expect future mutations to have similar features to the mutated samples i
 - D) Use Cloud Data Fusion to assign each city to a region that is labeled as 1, 2, 3, 4, or 5, and then use that number to represent the city in the model.
 
 **Memorize:** `B) Use SQL in BigQuery to transform the state column using a one-hot encoding method, and make each city a column with binary values.`
-
-**Quick reason:** Use SQL in BigQuery to transform the state column using a one-hot encoding method, and make each city a column with binary values.
 
 <details>
 <summary>Full explanation</summary>
@@ -6302,8 +5910,6 @@ https://cloud.google.com/bigquery/docs/auto-preprocessing#one_hot_encoding
 
 **Memorize:** `A) Automate the 10 intents that cover 70% of the requests so that live agents can handle more complicated requests.`
 
-**Quick reason:** Automate the 10 intents that cover 70% of the requests so that live agents can handle more complicated requests.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6336,8 +5942,6 @@ https://cloud.google.com/dialogflow/cx/docs/concept/agent-design#build-iterative
 
 **Memorize:** `D) Increase the complexity of your model by, e.g., introducing an additional layer or increase sizing the size of vocabularies or n-grams used.`
 
-**Quick reason:** Increase the complexity of your model by, e.g., introducing an additional layer or increase sizing the size of vocabularies or n-grams used.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6368,8 +5972,6 @@ https://stats.stackexchange.com/questions/497050/how-big-a-difference-for-test-t
 - D) Reduce the size of the training dataset, and decrease the number of input features.
 
 **Memorize:** `B) Increase the size of the training dataset, and decrease the number of input features.`
-
-**Quick reason:** Increase the size of the training dataset, and decrease the number of input features.
 
 <details>
 <summary>Full explanation</summary>
@@ -6405,8 +6007,6 @@ https://docs.aws.amazon.com/machine-learning/latest/dg/model-fit-underfitting-vs
 
 **Memorize:** `D) Use Dialogflow to implement the chatbot, defining the intents based on the most common queries collected.`
 
-**Quick reason:** Use Dialogflow to implement the chatbot, defining the intents based on the most common queries collected.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6439,8 +6039,6 @@ https://cloud.google.com/dialogflow/es/docs/how/detect-intent-tts#:~:text=Dialog
 - D) Partition the table into smaller tables, with one for each clinic. Run queries against the smaller table pairs, and use unions for consolidated reports.
 
 **Memorize:** `C) Normalize the master patient-record table into the patient table and the visits table, and create other necessary tables to avoid self-join.`
-
-**Quick reason:** Normalize the master patient-record table into the patient table and the visits table, and create other necessary tables to avoid self-join.
 
 <details>
 <summary>Full explanation</summary>
@@ -6480,8 +6078,6 @@ ORDER BY age DESC Which table name will make the SQL statement work correctly?
 
 **Memorize:** `D) `bigquery-public-data.noaa_gsod.gsod*``
 
-**Quick reason:** it follows the correct wildcard syntax of enclosing the table name in backticks and including the * wildcard character.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6506,8 +6102,6 @@ Answer is
 - F) Use Google Stackdriver Audit Logging to determine policy violations.
 
 **Memorize:** `E) Segregate data across multiple tables or databases.`
-
-**Quick reason:** Option A is incorrect because disabling writes to certain tables would prevent users from updating the data which is not in line with the goal of providing access to t...
 
 <details>
 <summary>Full explanation</summary>
@@ -6550,8 +6144,6 @@ Option F is incorrect because while Google Stackdriver Audit Logging can help to
 
 **Memorize:** `F) F. Use the appropriate identity and access management (IAM) roles for each client's users.`
 
-**Quick reason:** B-D-F
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6573,8 +6165,6 @@ B-D-F
 - D) Using the Stackdriver API, create a project sink with advanced log filter to export to Pub/Sub, and subscribe to the topic from your monitoring tool.
 
 **Memorize:** `D) Using the Stackdriver API, create a project sink with advanced log filter to export to Pub/Sub, and subscribe to the topic from your monitoring tool.`
-
-**Quick reason:** Using the Stackdriver API, create a project sink with advanced log filter to export to Pub/Sub, and subscribe to the topic from your monitoring tool.
 
 <details>
 <summary>Full explanation</summary>
@@ -6605,8 +6195,6 @@ https://cloud.google.com/blog/products/management-tools/automate-your-response-t
 - D) Mount the backups to Google Cloud SQL, and then process the data using Google Cloud Dataproc.
 
 **Memorize:** `D) Mount the backups to Google Cloud SQL, and then process the data using Google Cloud Dataproc.`
-
-**Quick reason:** Mount the backups to Google Cloud SQL, and then process the data using Google Cloud Dataproc.
 
 <details>
 <summary>Full explanation</summary>
@@ -6642,8 +6230,6 @@ https://cloud.google.com/blog/products/data-analytics/genomics-data-analytics-wi
 
 **Memorize:** `A) Redefine the schema by evenly distributing reads and writes across the row space of the table.`
 
-**Quick reason:** Redefine the schema by evenly distributing reads and writes across the row space of the table.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6672,8 +6258,6 @@ https://cloud.google.com/bigtable/docs/performance#troubleshooting
 
 **Memorize:** `B) Rewrite the job in Apache Spark.`
 
-**Quick reason:** Rewrite the job in Apache Spark.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6697,8 +6281,6 @@ The objective is to not increase the cost at the sametime do the analyitics requ
 - D) Configure the Cloud Dataflow job as a streaming job so that it processes the log data immediately.
 
 **Memorize:** `C) Create a cron job with Google App Engine Cron Service to run the Cloud Dataflow job.`
-
-**Quick reason:** Create a cron job with Google App Engine Cron Service to run the Cloud Dataflow job.
 
 <details>
 <summary>Full explanation</summary>
@@ -6728,8 +6310,6 @@ https://cloud.google.com/appengine/docs/flexible/nodejs/scheduling-jobs-with-cro
 
 **Memorize:** `C) The CSV data loaded in BigQuery is not using BigQuery's default encoding.`
 
-**Quick reason:** The CSV data loaded in BigQuery is not using BigQuery's default encoding.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6757,8 +6337,6 @@ https://cloud.google.com/bigquery/docs/loading-data-cloud-storage-csv#details_of
 - D) Use a user account with the Project Viewer role on the Cloud Dataproc cluster to read the batch files and write to BigQuery
 
 **Memorize:** `C) Use a service account with the ability to read the batch files and to write to BigQuery`
-
-**Quick reason:** Use a service account with the ability to read the batch files and to write to BigQuery
 
 <details>
 <summary>Full explanation</summary>
@@ -6788,8 +6366,6 @@ https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/service-acc
 
 **Memorize:** `C) Use watermarks and timestamps to capture the lagged data.`
 
-**Quick reason:** Use watermarks and timestamps to capture the lagged data.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6813,8 +6389,6 @@ A watermark is a threshold that indicates when Dataflow expects all of the data 
 - D) Create encryption keys in Cloud Key Management Service. Reference those keys in your API service calls when accessing the data in your Compute Engine cluster instances.
 
 **Memorize:** `B) Create encryption keys in Cloud Key Management Service. Use those keys to encrypt your data in all of the Compute Engine cluster instances.`
-
-**Quick reason:** Create encryption keys in Cloud Key Management Service. Use those keys to encrypt your data in all of the Compute Engine cluster instances.
 
 <details>
 <summary>Full explanation</summary>
@@ -6844,8 +6418,6 @@ https://cloud.google.com/security/encryption/customer-supplied-encryption-keys
 
 **Memorize:** `B) Create and share a new dataset and view that provides the aggregate results.`
 
-**Quick reason:** Create and share a new dataset and view that provides the aggregate results.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6874,8 +6446,6 @@ https://cloud.google.com/bigquery/docs/share-access-views#create_the_view_in_the
 
 **Memorize:** `B) Subsample your training dataset.`
 
-**Quick reason:** Subsample your training dataset.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6902,8 +6472,6 @@ Storage from your data center through parallel uploads to a data transfer server
 
 **Memorize:** `C) Increase your network bandwidth from your datacenter to GCP.`
 
-**Quick reason:** Increase your network bandwidth from your datacenter to GCP.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -6929,8 +6497,6 @@ Few things in computing highlight the hardware limitations of networks as transf
 - D) Switch from HDDs to SSDs, override the preemptible VMs configuration to increase the boot disk size.
 
 **Memorize:** `D) Switch from HDDs to SSDs, override the preemptible VMs configuration to increase the boot disk size.`
-
-**Quick reason:** Switch from HDDs to SSDs, override the preemptible VMs configuration to increase the boot disk size.
 
 <details>
 <summary>Full explanation</summary>
@@ -6965,8 +6531,6 @@ https://cloud.google.com/architecture/hadoop/migrating-apache-spark-jobs-to-clou
 
 **Memorize:** `D) Monitor storage utilization. Increase the size of the Cloud Bigtable cluster when utilization increases above 70% of max capacity.`
 
-**Quick reason:** Answers are;
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7000,8 +6564,6 @@ https://cloud.google.com/bigtable/docs/modifying-instance#nodes
 
 **Memorize:** `C) Recreate the table with a partitioning column and clustering column.`
 
-**Quick reason:** Recreate the table with a partitioning column and clustering column.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7026,8 +6588,6 @@ LIMIT keyword is applied only at the end, i.e., only to limit the results alread
 
 **Memorize:** `B) Use a Cloud Dataflow pipeline to stream data into the BigQuery table.`
 
-**Quick reason:** Use a Cloud Dataflow pipeline to stream data into the BigQuery table.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7051,8 +6611,6 @@ You need a pipeline because this type of operation can be easily parallelized, a
 - D) Use the BigQuery bulk loader to batch load inventory changes into a daily inventory movement table. Calculate balances in a view that joins it to the historical inventory balance table. Update the inventory balance table nightly.
 
 **Memorize:** `C) Use the BigQuery streaming the stream changes into a daily inventory movement table. Calculate balances in a view that joins it to the historical inventory balance table. Update the inventory balance table nightly.`
-
-**Quick reason:** Use the BigQuery streaming the stream changes into a daily inventory movement table. Calculate balances in a view that joins it to the historical inventory balance tab...
 
 <details>
 <summary>Full explanation</summary>
@@ -7084,8 +6642,6 @@ D : Not Correct, as it will meet the requirement of near real time
 
 **Memorize:** `C) Set the BigQuery dataset to be multi-regional. In the event of an emergency, use a point-in-time snapshot to recover the data.`
 
-**Quick reason:** Set the BigQuery dataset to be multi-regional. In the event of an emergency, use a point-in-time snapshot to recover the data.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7116,8 +6672,6 @@ https://cloud.google.com/solutions/bigquery-data-warehouse#backup-and-recovery
 
 **Memorize:** `D) Increase the cluster size with preemptible worker nodes, and configure them to use graceful decommissioning.`
 
-**Quick reason:** Increase the cluster size with preemptible worker nodes, and configure them to use graceful decommissioning.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7146,8 +6700,6 @@ https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/scaling-clu
 
 **Memorize:** `A) Re-create the tables using DDL. Partition the tables by a column containing a TIMESTAMP or DATE Type.`
 
-**Quick reason:** Re-create the tables using DDL. Partition the tables by a column containing a TIMESTAMP or DATE Type.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7172,8 +6724,6 @@ With partitions the performance will improve for selecting 30-90 days data. Also
 
 **Memorize:** `B) Have the data acquisition devices publish data to Cloud Pub/Sub.`
 
-**Quick reason:** Have the data acquisition devices publish data to Cloud Pub/Sub.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7197,8 +6747,6 @@ The most cost effective (cheapest) way is to use PubSub. It can handle messages 
 - D) Use Cloud Dataflow to write summary of each day's stock trades to an Avro file on Cloud Storage. Update your application to read from Cloud Storage and Cloud Bigtable to compute the responses.
 
 **Memorize:** `A) Change the row key syntax in your Cloud Bigtable table to begin with the stock symbol.`
-
-**Quick reason:** Change the row key syntax in your Cloud Bigtable table to begin with the stock symbol.
 
 <details>
 <summary>Full explanation</summary>
@@ -7228,8 +6776,6 @@ https://cloud.google.com/bigtable/docs/schema-design-time-series
 - E) For each Cloud Storage bucket or BigQuery dataset, decide which projects need access. Find all the active members who have access to these projects, and create a Cloud IAM policy to grant access to all these users.
 
 **Memorize:** `C) Create distinct groups for various teams, and specify groups in Cloud IAM policies.`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -7261,8 +6807,6 @@ Currently, your pipeline is located in europe-west4 and has a maximum of 3 worke
 
 **Memorize:** `B) Use a larger instance type for your Cloud Dataflow workers`
 
-**Quick reason:** Answers are;
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7292,8 +6836,6 @@ For batch jobs, the default machine type is n1-standard-1. For streaming jobs, t
 - E) Modify your Cloud Dataflow pipeline to use the CoGroupByKey transform before writing to Cloud Bigtable
 
 **Memorize:** `C) Increase the number of nodes in the Cloud Bigtable cluster`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -7330,8 +6872,6 @@ https://cloud.google.com/dataflow/docs/guides/specifying-exec-params#setting-oth
 
 **Memorize:** `C) A random universally unique identifier number (version 4 UUID)`
 
-**Quick reason:** A random universally unique identifier number (version 4 UUID)
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7360,8 +6900,6 @@ What should you do?
 
 **Memorize:** `B) Create a Stackdriver Monitoring dashboard based on the BigQuery metric slots/allocated_for_project`
 
-**Quick reason:** Create a Stackdriver Monitoring dashboard based on the BigQuery metric slots/allocated_for_project
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7389,8 +6927,6 @@ https://cloud.google.com/bigquery/docs/monitoring#slots-available
 - D) Create authorized views for each team in datasets created for each team. Assign the authorized views data viewer access to the dataset in which the data resides. Assign the users/groups data viewer access to the datasets in which the authorized views reside
 
 **Memorize:** `A) Assign the users/groups data viewer access at the table level for each table`
-
-**Quick reason:** it is feasible to provide table level access to user by allowing user to query single table and no other table will be visible to user in same dataset.
 
 <details>
 <summary>Full explanation</summary>
@@ -7422,8 +6958,6 @@ https://cloud.google.com/bigquery/docs/table-access-controls-intro#example_use_c
 
 **Memorize:** `A) Create a Cloud SQL instance in one zone, and create a failover replica in another zone within the same region.`
 
-**Quick reason:** Create a Cloud SQL instance in one zone, and create a failover replica in another zone within the same region.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7451,8 +6985,6 @@ https://cloud.google.com/sql/docs/mysql/high-availability
 
 **Memorize:** `A) Use gcloud kms keys create to create a symmetric key. Then use gcloud kms encrypt to encrypt each archival file with the key and unique additional authenticated data (AAD). Use gsutil cp to upload each encrypted file to the Cloud Storage bucket, and keep the AAD outside of Google Cloud.`
 
-**Quick reason:** Use gcloud kms keys create to create a symmetric key. Then use gcloud kms encrypt to encrypt each archival file with the key and unique additional authenticated data (...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7476,8 +7008,6 @@ AAD is used to decrypt the data so better to keep it outside GCP for safety
 - D) Give GroupA owner access and GroupB editor access for all datasets in a project.
 
 **Memorize:** `C) Give a user access to view all datasets in a project, but not run queries on them.`
-
-**Quick reason:** Give a user access to view all datasets in a project, but not run queries on them.
 
 <details>
 <summary>Full explanation</summary>
@@ -7505,8 +7035,6 @@ https://cloud.google.com/bigquery/docs/access-control#bigquery.dataViewer
 
 **Memorize:** `D) You need to set a query language for each dataset and the default is Standard SQL.`
 
-**Quick reason:** You need to set a query language for each dataset and the default is Standard SQL.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7530,8 +7058,6 @@ Query language is not set at dataset level. It depends on from where we are tryi
 - D) Splitting tables into multiple tables; using the LIMIT clause
 
 **Memorize:** `A) Splitting tables into multiple tables; putting data in partitions`
-
-**Quick reason:** Splitting tables into multiple tables; putting data in partitions
 
 <details>
 <summary>Full explanation</summary>
@@ -7557,8 +7083,6 @@ Others options are with Limit, limit cannot stop from checking all the rows in b
 
 **Memorize:** `D) 2 continuous and 1 categorical`
 
-**Quick reason:** 2 continuous and 1 categorical
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7582,8 +7106,6 @@ Year can be any value, income can be any value, so continuous, and country is ca
 - D) the selection is final and you must resume using the same storage type
 
 **Memorize:** `B) export the data from the existing instance and import the data into a new instance`
-
-**Quick reason:** export the data from the existing instance and import the data into a new instance
 
 <details>
 <summary>Full explanation</summary>
@@ -7617,8 +7139,6 @@ https://cloud.google.com/bigtable/docs/choosing-ssd-hdd
 
 **Memorize:** `B) The HBase shell is a command-line tool that performs administrative tasks, such as creating and deleting tables.`
 
-**Quick reason:** The HBase shell is a command-line tool that performs administrative tasks, such as creating and deleting tables. The Cloud Bigtable HBase client for Java makes it poss...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7645,8 +7165,6 @@ https://cloud.google.com/bigtable/docs/installing-hbase-shell
 - D) master key
 
 **Memorize:** `C) row key`
-
-**Quick reason:** row key
 
 <details>
 <summary>Full explanation</summary>
@@ -7677,8 +7195,6 @@ https://cloud.google.com/bigtable/docs/overview
 
 **Memorize:** `C) single-keyed data with very low latency`
 
-**Quick reason:** single-keyed data with very low latency
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7708,8 +7224,6 @@ https://cloud.google.com/bigtable/docs/overview#storage-model
 
 **Memorize:** `C) 1 TB`
 
-**Quick reason:** 1 TB
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7737,8 +7251,6 @@ https://cloud.google.com/bigtable/docs/overview#title_short_and_other_storage_op
 - D) You will not use the data to back a user-facing or latency-sensitive application.
 
 **Memorize:** `C) You need to integrate with Google BigQuery.`
-
-**Quick reason:** HDD storage is suitable for use cases that meet the following criteria:
 
 <details>
 <summary>Full explanation</summary>
@@ -7777,8 +7289,6 @@ https://cloud.google.com/bigtable/docs/choosing-ssd-hdd#use-cases-hdd
 
 **Memorize:** `C) Avoid schema designs that require atomicity across rows`
 
-**Quick reason:** Avoid schema designs that require atomicity across rows
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7806,8 +7316,6 @@ https://cloud.google.com/bigtable/docs/schema-design#row-keys
 - D) Hashing
 
 **Memorize:** `A) Field promotion`
-
-**Quick reason:** Field promotion
 
 <details>
 <summary>Full explanation</summary>
@@ -7837,8 +7345,6 @@ https://cloud.google.com/bigtable/docs/schema-design-time-series#ensure_that_you
 
 **Memorize:** `C) The Cloud Bigtable cluster has too many nodes.`
 
-**Quick reason:** The Cloud Bigtable cluster has too many nodes.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7866,8 +7372,6 @@ https://cloud.google.com/bigtable/docs/performance
 - D) the time dimension
 
 **Memorize:** `B) no data`
-
-**Quick reason:** no data
 
 <details>
 <summary>Full explanation</summary>
@@ -7900,8 +7404,6 @@ https://cloud.google.com/bigtable/docs/overview
 - D) A stock symbol followed by a timestamp
 
 **Memorize:** `B) A timestamp followed by a stock symbol`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -7937,8 +7439,6 @@ https://cloud.google.com/bigtable/docs/schema-design-time-series#ensure_that_you
 
 **Memorize:** `C) Have both the Compute Engine instance and the Cloud Bigtable instance to be in the same zone.`
 
-**Quick reason:** Have both the Compute Engine instance and the Cloud Bigtable instance to be in the same zone.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -7969,8 +7469,6 @@ https://cloud.google.com/bigtable/docs/creating-compute-instance
 - D) Log into the master node and make changes from thereMost Voted
 
 **Memorize:** `C) Configure the cluster using Cloud Deployment Manager`
-
-**Quick reason:** Configure the cluster using Cloud Deployment Manager
 
 <details>
 <summary>Full explanation</summary>
@@ -8003,8 +7501,6 @@ https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/cluster-pro
 
 **Memorize:** `D) Your custom endpoint is not acknowledging messages within the acknowledgement deadline.`
 
-**Quick reason:** Your custom endpoint is not acknowledging messages within the acknowledgement deadline.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8035,8 +7531,6 @@ https://cloud.google.com/run/docs/mapping-custom-domains
 
 **Memorize:** `A) Assign global unique identifiers (GUID) to each data entry.`
 
-**Quick reason:** Assign global unique identifiers (GUID) to each data entry.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8066,8 +7560,6 @@ if timestamp is used as message creation timestamp than that can also be used as
 - D) Import the new records from the CSV file into a new BigQuery table. Create a BigQuery job that merges the new records with the existing records and writes the results to a new BigQuery table.
 
 **Memorize:** `D) Import the new records from the CSV file into a new BigQuery table. Create a BigQuery job that merges the new records with the existing records and writes the results to a new BigQuery table.`
-
-**Quick reason:** Import the new records from the CSV file into a new BigQuery table. Create a BigQuery job that merges the new records with the existing records and writes the results...
 
 <details>
 <summary>Full explanation</summary>
@@ -8102,8 +7594,6 @@ https://cloud.google.com/bigquery/quotas#data-manipulation-language-statements
 - D) Develop an App Engine application to consume logs using GCP API calls, and send emails if you find a failure in the logs
 
 **Memorize:** `A) Export the information to Cloud Monitoring, and set up an Alerting policy`
-
-**Quick reason:** Export the information to Cloud Monitoring, and set up an Alerting policy
 
 <details>
 <summary>Full explanation</summary>
@@ -8145,8 +7635,6 @@ Managed Solution: Cloud Monitoring is a managed service, reducing the operationa
 - D) Modernize the Spark workload for Dataflow and the Hive workload for BigQuery.
 
 **Memorize:** `B) Migrate the workloads to Dataproc plus Cloud Storage; modernize later.`
-
-**Quick reason:** Migrate the workloads to Dataproc plus Cloud Storage; modernize later.
 
 <details>
 <summary>Full explanation</summary>
@@ -8192,8 +7680,6 @@ https://cloud.google.com/architecture/hadoop/migrating-apache-spark-jobs-to-clou
 
 **Memorize:** `A) Partition by transaction time; cluster by state first, then city, then store ID.`
 
-**Quick reason:** Partition by transaction time; cluster by state first, then city, then store ID.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8232,8 +7718,6 @@ https://cloud.google.com/bigquery/docs/clustered-tables
 
 **Memorize:** `D) Partition the data by transaction date.`
 
-**Quick reason:** Partition the data by transaction date.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8263,8 +7747,6 @@ https://cloud.google.com/bigquery/docs/partitioned-tables
 - D) Create a Dataflow workflow that reads the data from Cloud Storage, checks for values outside the expected range, sets the value to an appropriate default, and writes the updated records to the same dataset in Cloud Storage.
 
 **Memorize:** `C) Create a Dataflow workflow that reads the data from Cloud Storage, checks for values outside the expected range, sets the value to an appropriate default, and writes the updated records to a new dataset in Cloud Storage.`
-
-**Quick reason:** Create a Dataflow workflow that reads the data from Cloud Storage, checks for values outside the expected range, sets the value to an appropriate default, and writes t...
 
 <details>
 <summary>Full explanation</summary>
@@ -8299,8 +7781,6 @@ So option C leverages Dataflow to properly clean the data while preserving the o
 - D) Use CoGroupByKey instead of the SideInput.
 
 **Memorize:** `D) Use CoGroupByKey instead of the SideInput.`
-
-**Quick reason:** Use CoGroupByKey instead of the SideInput.
 
 <details>
 <summary>Full explanation</summary>
@@ -8346,8 +7826,6 @@ https://cloud.google.com/architecture/building-production-ready-data-pipelines-u
 
 **Memorize:** `C) Set the BigQuery dataset to be multi-regional. In the event of an emergency, use a point-in-time snapshot to recover the data.`
 
-**Quick reason:** Set the BigQuery dataset to be multi-regional. In the event of an emergency, use a point-in-time snapshot to recover the data.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8377,8 +7855,6 @@ https://cloud.google.com/bigquery/docs/table-snapshots-intro#table_snapshots
 - D) Insufficient permissions
 
 **Memorize:** `B) Exceptions in worker code`
-
-**Quick reason:** Exceptions in worker code
 
 <details>
 <summary>Full explanation</summary>
@@ -8426,8 +7902,6 @@ https://cloud.google.com/dataflow/docs/guides/troubleshooting-your-pipeline#dete
 
 **Memorize:** `A) Establish a Cloud Interconnect connection between the on-premises data center and Google Cloud, and then use the Storage Transfer Service.`
 
-**Quick reason:** Establish a Cloud Interconnect connection between the on-premises data center and Google Cloud, and then use the Storage Transfer Service.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8465,8 +7939,6 @@ https://cloud.google.com/storage-transfer/docs/transfer-options#:~:text=Transfer
 - D) Use Cloud Spanner to replicate the data across regions. Normalize the data in a series of tables.
 
 **Memorize:** `B) Use BigQuery as a data warehouse. Set output destinations for caching large queries.`
-
-**Quick reason:** Use BigQuery as a data warehouse. Set output destinations for caching large queries.
 
 <details>
 <summary>Full explanation</summary>
@@ -8510,8 +7982,6 @@ https://cloud.google.com/bigquery/docs/query-overview
 
 **Memorize:** `B) Configure a Cloud SQL for PostgreSQL instance with high availability enabled.`
 
-**Quick reason:** Configure a Cloud SQL for PostgreSQL instance with high availability enabled.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8552,8 +8022,6 @@ https://cloud.google.com/sql/docs/postgres/high-availability#HA-configuration
 
 **Memorize:** `D) Use Cloud Composer in a Shared VPC configuration. Place the Cloud Composer resources in the service project.`
 
-**Quick reason:** Use Cloud Composer in a Shared VPC configuration. Place the Cloud Composer resources in the service project.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8585,8 +8053,6 @@ We need to organize our information so we can more easily understand where our c
 - D) Store he common data in the HDFS storage for a Google Cloud Dataproc cluster.
 
 **Memorize:** `C) Store the common data encoded as Avro in Google Cloud Storage.`
-
-**Quick reason:** Store the common data encoded as Avro in Google Cloud Storage.
 
 <details>
 <summary>Full explanation</summary>
@@ -8628,8 +8094,6 @@ We need to organize our information so we can more easily understand where our c
 
 **Memorize:** `A) Cloud Pub/Sub, Cloud Dataflow, and Cloud Storage`
 
-**Quick reason:** Cloud Pub/Sub, Cloud Dataflow, and Cloud Storage
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8660,8 +8124,6 @@ We need to organize our information so we can more easily understand where our c
 
 **Memorize:** `C) Create a view on the table to present to the virtualization tool.`
 
-**Quick reason:** Create a view on the table to present to the virtualization tool.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8689,8 +8151,6 @@ Google Cloud Pub/Sub topic instead of the Apache Kafka cluster. A subscriber app
 - D) Use the automatically generated timestamp from Cloud Pub/Sub to order the data.
 
 **Memorize:** `B) Attach the timestamp and Package ID on the outbound message from each publisher device as they are sent to Clod Pub/Sub.`
-
-**Quick reason:** Attach the timestamp and Package ID on the outbound message from each publisher device as they are sent to Clod Pub/Sub.
 
 <details>
 <summary>Full explanation</summary>
@@ -8722,8 +8182,6 @@ D. The timestamp we are interested in is when the data was produced by the publi
 
 **Memorize:** `D) The maximum number of workers`
 
-**Quick reason:** The maximum number of workers
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8752,8 +8210,6 @@ https://cloud.google.com/dataflow/docs/guides/specifying-exec-params
 
 **Memorize:** `D) Load the data into Google BigQuery tables, write a Google Data Studio 360 report that connects to your data, calculates a metric, and then uses a filter expression to show only suboptimal rows in a table.`
 
-**Quick reason:** Load the data into Google BigQuery tables, write a Google Data Studio 360 report that connects to your data, calculates a metric, and then uses a filter expression to...
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8780,8 +8236,6 @@ Also once the data is loaded in big query the data can be easily visualized in d
 - E) Adjust the settings for each dataset to allow a related region-based security group view access.
 
 **Memorize:** `C) Adjust the settings for each table to allow a related region-based security group view access.`
-
-**Quick reason:** Answers are;
 
 <details>
 <summary>Full explanation</summary>
@@ -8815,8 +8269,6 @@ https://cloud.google.com/blog/products/data-analytics/introducing-table-level-ac
 
 **Memorize:** `A) Rowkey: date#device_id Column data: data_point`
 
-**Quick reason:** Rowkey: date#device_id Column data: data_point
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8840,8 +8292,6 @@ From the question "Most common query is all data for a given device for a given 
 - D) BigQuery and Cloud Storage
 
 **Memorize:** `C) BigQuery and Cloud Bigtable`
-
-**Quick reason:** BigQuery and Cloud Bigtable
 
 <details>
 <summary>Full explanation</summary>
@@ -8869,8 +8319,6 @@ They need to scan specific time range rows with a very fast response time (milli
 
 **Memorize:** `B) Look through the current data and compose a small set of generalized charts and tables bound to criteria filters that allow value selection.`
 
-**Quick reason:** Look through the current data and compose a small set of generalized charts and tables bound to criteria filters that allow value selection.
-
 <details>
 <summary>Full explanation</summary>
 
@@ -8892,8 +8340,6 @@ Look through the current data and compose a small set of generalized charts and 
 - D) Create a table called tracking_table with a TIMESTAMP column to represent the day.
 
 **Memorize:** `B) Create a partitioned table called tracking_table and include a TIMESTAMP column.`
-
-**Quick reason:** Create a partitioned table called tracking_table and include a TIMESTAMP column.
 
 <details>
 <summary>Full explanation</summary>
@@ -8925,8 +8371,6 @@ We need to organize our information so we can more easily understand where our c
 - E) Cloud Dataflow, Cloud SQL, and Cloud Storage
 
 **Memorize:** `A) Cloud Pub/Sub, Cloud Dataflow, and Cloud Storage`
-
-**Quick reason:** Cloud Pub/Sub, Cloud Dataflow, and Cloud Storage
 
 <details>
 <summary>Full explanation</summary>
